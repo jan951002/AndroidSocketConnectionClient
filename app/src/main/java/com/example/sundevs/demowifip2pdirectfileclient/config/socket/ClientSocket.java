@@ -26,7 +26,7 @@ public class ClientSocket implements ClientContract.FormBookPresenter {
 
     private String host;
 
-    private ClientContract.FormBookView view;
+    private ClientContract.MainView view;
 
     public ClientSocket(String host) {
         this.host = host;
@@ -63,7 +63,7 @@ public class ClientSocket implements ClientContract.FormBookPresenter {
     }
 
     @Override
-    public void attachView(ClientContract.FormBookView view) {
+    public void attachView(ClientContract.MainView view) {
         this.view = view;
     }
 
