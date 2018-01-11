@@ -61,7 +61,7 @@ public class Book implements Serializable {
                 '}';
     }
 
-    public void setAll(String title, String author, String category){
+    public void setAll(String title, String author, String category) {
         setTitle(title);
         setAuthor(author);
         setBookCategory(category);

@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity implements ClientContract.MainVie
     private ClientContract.FormBookPresenter client;
     private ClientContract.ConnectivityChange connectivityChange;
 
-    public MainActivity(){
+    public MainActivity() {
         super();
     }
 

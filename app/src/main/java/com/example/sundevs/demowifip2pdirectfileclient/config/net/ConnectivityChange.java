@@ -13,7 +13,7 @@ import com.example.sundevs.demowifip2pdirectfileclient.ui.MessageType;
  * Created by SunDevs on 10/01/2018.
  */
 
-public class ConnectivityChange extends BroadcastReceiver implements ClientContract.ConnectivityChange{
+public class ConnectivityChange extends BroadcastReceiver implements ClientContract.ConnectivityChange {
 
     private ClientContract.MainView view;
 
@@ -24,19 +24,19 @@ public class ConnectivityChange extends BroadcastReceiver implements ClientContr
     public void onReceive(Context context, Intent intent) {
 
         final String action = intent.getAction();
-        if(action.equals(WifiManager.NETWORK_STATE_CHANGED_ACTION)){
+        if (action.equals(WifiManager.NETWORK_STATE_CHANGED_ACTION)) {
             NetworkInfo info = intent.getParcelableExtra(WifiManager.EXTRA_NETWORK_INFO);
             boolean connected = info.isConnected();
             if (connected) {
-                if(view != null){
+                if (view != null) {
                     view.showMessage("Connected", MessageType.SUCCESS);
                 }
             } else {
-                if(view != null){
+                if (view != null) {
                     view.showMessage("No Connected", MessageType.WARNING);
                 }
             }
-            if(view != null){
+            if (view != null) {
                 view.changeEnabledButtonSend(connected);
             }
         }

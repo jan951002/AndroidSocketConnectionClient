@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sundevs.demowifip2pdirectfileclient.ui.FormBookActivity">
+    tools:context="com.example.sundevs.demowifip2pdirectfileclient.ui.MainActivity">
 
     <EditText
         android:id="@+id/txt_title_book"
